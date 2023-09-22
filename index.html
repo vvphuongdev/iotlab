@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>IOT Smart Farm</title>
+</head>
+<body>
+    <div class="header">
+        <h1>IoT Smart Farm</h1>
+    </div>
+    <div class="banner">
+        <ul>
+            <li>
+                <button onclick="function_q1()">Farm 1</button>
+            </li>
+            <li>
+                <button onclick="function_q2()">Farm 2</button>
+            </li>
+            <li>
+                <button onclick="function_q3()">Farm 3</button>
+            </li>
+            <li>
+                <button onclick="function_q4()">Farm 4</button>
+            </li>
+        </ul>
+    </div>
+    <div class="hien-thi">
+        <div class="nhiet-do">
+            <img src="temperature-icon.png" id="nhietdo1">
+            <h3>Nhiệt độ</h3>
+            <h7 id="nhietdo"></h7>
+        </div>
+        <div class="do-am">
+            <img src="humidity-icon.png" id="doam1">
+            <h3>Độ ẩm</h3>
+            <h7 id="doam"></h7>
+        </div>
+        <div class="anh-sang">
+            <img src="lux-icon.png" id="angsang1">
+            <h3>Ánh sáng</h3>
+            <h7 id="anhsang"></h7>
+        </div>
+    </div>
+
+    <div class="dieu-khien">
+      <div class="box">
+        <img src="bomnuoc_off.png" id="bomnuoc">
+        <div class="btn">
+          <button id="btn1">ON</button>
+          <button id="btn2">OFF</button>
+        </div>
+      </div>
+      <div class="box">
+        <img src="baochay_off.png" id="baochay">
+        <div class="btn">
+          <button id="btn3">ON</button>
+          <button id="btn4">OFF</button>
+        </div>
+      </div>
+      <div class="box">
+        <img src="lamp_off.png" id="batden">
+        <div class="btn">
+          <button id="btn5">ON</button>
+          <button id="btn6">OFF</button>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="vvp">
+        <h3>Vũ Việt Phương</h3>
+        <ul>
+          <li>
+            <p>MSSV: 20161354</p>
+            <p>SĐT: 0886196554</p>
+            <p>Email: phuongworkspace@gmail.com</p>
+            <a href="https://www.facebook.com/Teddy.Darling2/">
+              <i class='bx bxl-facebook-circle'></i>
+              Facebook
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="ndh">
+        <h3>Vũ Việt Phương</h3>
+        <ul>
+          <li>
+            <p>MSSV: 20161354</p>
+            <p>SĐT: 0886196554</p>
+            <p>Email: phuongworkspace@gmail.com</p>
+            <a href="https://www.facebook.com/Teddy.Darling2/">
+              <i class='bx bxl-facebook-circle'></i>
+              Facebook
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+
+
+
+<script src="main.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+  apiKey: "AIzaSyBxG4qiacxHaHE50h5gBjkwR5icTBGlyb0",
+  authDomain: "doamnhietdo-2dd6a.firebaseapp.com",
+  databaseURL: "https://doamnhietdo-2dd6a-default-rtdb.firebaseio.com",
+  projectId: "doamnhietdo-2dd6a",
+  storageBucket: "doamnhietdo-2dd6a.appspot.com",
+  messagingSenderId: "482027143453",
+  appId: "1:482027143453:web:18480323181ea65bd0e1f4",
+  measurementId: "G-N3GR6RDM9C"
+};
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script>
+  //functions
+  var nhietDo = document.getElementById('nhietdo');
+  var dbRef = firebase.database().ref('Farm 1').child('Nhiet do');  
+  var doAm = document.getElementById('doam');
+  var dbRef2 = firebase.database().ref('Farm 1').child('Do am');
+  var luongMua = document.getElementById('anhsang');
+  var dbRef3 = firebase.database().ref('Farm 1').child('Anh sang');
+
+  var nhietDo_q2 = document.getElementById('nhietdo');
+  var dbRef4 = firebase.database().ref('Farm 2').child('Nhiet do');  
+  var doAm_q2 = document.getElementById('doam');
+  var dbRef5 = firebase.database().ref('Farm 2').child('Do am');
+  var luongMua_q2 = document.getElementById('anhsang');
+  var dbRef6 = firebase.database().ref('Farm 2').child('Anh sang');
+
+  var nhietDo_q3 = document.getElementById('nhietdo');
+  var dbRef7 = firebase.database().ref('Farm 3').child('Nhiet do');
+  var doAm_q3 = document.getElementById('doam');
+  var dbRef8 = firebase.database().ref('Farm 3').child('Do am');  
+  var luongMua_q3 = document.getElementById('anhsang');
+  var dbRef9 = firebase.database().ref('Farm 3').child('Anh sang');
+
+  var nhietDo_q4 = document.getElementById('nhietdo');
+  var dbRef10 = firebase.database().ref('Farm 4').child('Nhiet do');
+  var doAm_q4 = document.getElementById('doam');
+  var dbRef11 = firebase.database().ref('Farm 4').child('Do am');
+  var luongMua_q4 = document.getElementById('anhsang');
+  var dbRef12 = firebase.database().ref('Farm 4').child('Anh sang');
+
+</script>
+<script>
+  function function_q1(){
+    dbRef.on('value', snap => nhietDo.innerText = snap.val());
+    dbRef2.on('value', snap => doAm.innerText = snap.val());
+    dbRef3.on('value', snap => luongMua.innerText = snap.val());
+  }
+</script>
+<script>
+  function function_q2(){
+    dbRef4.on('value', snap => nhietDo_q2.innerText = snap.val());
+    dbRef5.on('value', snap => doAm_q2.innerText = snap.val());
+    dbRef6.on('value', snap => luongMua_q2.innerText = snap.val());
+  }
+</script>
+<script>
+  function function_q3(){
+    dbRef7.on('value', snap => nhietDo_q3.innerText = snap.val());
+    dbRef8.on('value', snap => doAm_q3.innerText = snap.val());
+    dbRef9.on('value', snap => luongMua_q3.innerText = snap.val());
+  }
+</script>
+<script>
+  function function_q4(){
+    dbRef10.on('value', snap => nhietDo_q4.innerText = snap.val());
+    dbRef11.on('value', snap => doAm_q4.innerText = snap.val());
+    dbRef12.on('value', snap => luongMua_q4.innerText = snap.val());
+  }
+</script>
+
+</body>
+</html>

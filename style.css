@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: x-large;
+}
+.header{
+    text-align: center;
+    background-color: greenyellow;
+    height: 100px;
+}
+.banner{
+    list-style:none;
+    margin:20px;
+    padding:0;
+    text-align:center;
+    height: 100px;
+}
+.banner ul
+{
+  margin-top:  42px;
+}
+.banner ul li
+{
+  list-style-type: none;
+  display: inline;
+  margin-left: 50px;
+}
+.banner ul li button{
+    width: 10%;
+    height: 50px;
+    font-size: 20px;
+    margin-right: 2%;
+}
+.hien-thi{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-gap: 1.5rem;
+    align-items: center;
+    padding-bottom: 50px;
+    /* display: flex;
+    justify-content:space-between;
+    margin-left: auto;
+    margin-right: 290px;
+    width: 900px; */
+}
+.hien-thi h3{
+    padding-top: 10px;
+}
+.nhiet-do, .do-am, .anh-sang{
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 0.5rem;
+    border-style: solid;
+}
+
+
+
+.dieu-khien{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-gap: 1.5rem;
+    align-items: center;
+    padding-bottom: 50px;
+    /* position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+    flex-grow: 1;  */
+}
+.box{
+    position: relative;
+    margin-top: 4rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 0.5rem;
+    border-style: solid;
+}
+.box button{
+    font-family: system-ui, sans-serif;
+    margin-top: 10px;
+    font-size: 30px;
+    padding: 10px 24px;
+    cursor: pointer;
+    font-weight: bold; 
+    border-radius: 10px;
+}
+#btn5, #btn3, #btn1{
+    background-color: #00FF00;
+}
+#btn4, #btn2, #btn6{
+    background-color: #FF0000;
+}
+
+
+#bomnuoc{
+    height: 225px;
+    width: 200px;
+}
+
+#baochay{
+    height: 225px;
+    width: 200px;
+}
+#batden{
+    height: 225px;
+    width: 200px;
+}
+.footer{
+    display: flex;
+    justify-content:space-between;
+    background-color: #C0C0C0;
+    padding: 30px;
+    padding-left: 20%;
+    padding-right: 20%;
+
+}
+.vvp ul{
+    padding: 6px;
+    list-style-type: none;
+}
+.vvp li{
+    float: left;
+}
+.ndh ul{
+    padding: 6px;
+    list-style-type: none;
+
+}
+
+
