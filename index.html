@@ -130,61 +130,61 @@
 </script>
 <script>
   //functions
-  var nhietDo = document.getElementById('nhietdo');
+  var nhietDo_f1 = document.getElementById('nhietdo');
   var dbRef = firebase.database().ref('Farm 1').child('Nhiet do');  
-  var doAm = document.getElementById('doam');
+  var doAm_f1 = document.getElementById('doam');
   var dbRef2 = firebase.database().ref('Farm 1').child('Do am');
-  var luongMua = document.getElementById('anhsang');
+  var anhSang_f1 = document.getElementById('anhsang');
   var dbRef3 = firebase.database().ref('Farm 1').child('Anh sang');
 
-  var nhietDo_q2 = document.getElementById('nhietdo');
+  var nhietDo_f2 = document.getElementById('nhietdo');
   var dbRef4 = firebase.database().ref('Farm 2').child('Nhiet do');  
-  var doAm_q2 = document.getElementById('doam');
+  var doAm_f2 = document.getElementById('doam');
   var dbRef5 = firebase.database().ref('Farm 2').child('Do am');
-  var luongMua_q2 = document.getElementById('anhsang');
+  var anhSang_f2 = document.getElementById('anhsang');
   var dbRef6 = firebase.database().ref('Farm 2').child('Anh sang');
 
-  var nhietDo_q3 = document.getElementById('nhietdo');
+  var nhietDo_f3 = document.getElementById('nhietdo');
   var dbRef7 = firebase.database().ref('Farm 3').child('Nhiet do');
-  var doAm_q3 = document.getElementById('doam');
+  var doAm_f3 = document.getElementById('doam');
   var dbRef8 = firebase.database().ref('Farm 3').child('Do am');  
-  var luongMua_q3 = document.getElementById('anhsang');
+  var anhSang_f3 = document.getElementById('anhsang');
   var dbRef9 = firebase.database().ref('Farm 3').child('Anh sang');
 
-  var nhietDo_q4 = document.getElementById('nhietdo');
+  var nhietDo_f4 = document.getElementById('nhietdo');
   var dbRef10 = firebase.database().ref('Farm 4').child('Nhiet do');
-  var doAm_q4 = document.getElementById('doam');
+  var doAm_f4 = document.getElementById('doam');
   var dbRef11 = firebase.database().ref('Farm 4').child('Do am');
-  var luongMua_q4 = document.getElementById('anhsang');
+  var anhSang_f4 = document.getElementById('anhsang');
   var dbRef12 = firebase.database().ref('Farm 4').child('Anh sang');
 
 </script>
 <script>
   function function_q1(){
-    dbRef.on('value', snap => nhietDo.innerText = snap.val());
-    dbRef2.on('value', snap => doAm.innerText = snap.val());
-    dbRef3.on('value', snap => luongMua.innerText = snap.val());
+    dbRef.on('value', snap => nhietDo_f1.innerText = snap.val());
+    dbRef2.on('value', snap => doAm_f1.innerText = snap.val());
+    dbRef3.on('value', snap => anhSang_f1.innerText = snap.val());
   }
 </script>
 <script>
   function function_q2(){
-    dbRef4.on('value', snap => nhietDo_q2.innerText = snap.val());
-    dbRef5.on('value', snap => doAm_q2.innerText = snap.val());
-    dbRef6.on('value', snap => luongMua_q2.innerText = snap.val());
+    dbRef4.on('value', snap => nhietDo_f2.innerText = snap.val());
+    dbRef5.on('value', snap => doAm_f2.innerText = snap.val());
+    dbRef6.on('value', snap => anhSang_f2.innerText = snap.val());
   }
 </script>
 <script>
   function function_q3(){
-    dbRef7.on('value', snap => nhietDo_q3.innerText = snap.val());
-    dbRef8.on('value', snap => doAm_q3.innerText = snap.val());
-    dbRef9.on('value', snap => luongMua_q3.innerText = snap.val());
+    dbRef7.on('value', snap => nhietDo_f3.innerText = snap.val());
+    dbRef8.on('value', snap => doAm_f3.innerText = snap.val());
+    dbRef9.on('value', snap => anhSang_f3.innerText = snap.val());
   }
 </script>
 <script>
   function function_q4(){
-    dbRef10.on('value', snap => nhietDo_q4.innerText = snap.val());
-    dbRef11.on('value', snap => doAm_q4.innerText = snap.val());
-    dbRef12.on('value', snap => luongMua_q4.innerText = snap.val());
+    dbRef10.on('value', snap => nhietDo_f4.innerText = snap.val());
+    dbRef11.on('value', snap => doAm_f4.innerText = snap.val());
+    dbRef12.on('value', snap => anhSang_f4.innerText = snap.val());
   }
 </script>
 

@@ -39,11 +39,11 @@ let btn6 = document.querySelector('#btn6');
 // functions nut bam
 btn5.addEventListener('click', ()=>{
      img3.src = 'lamp_on.png';
-     firebase.database().ref("Thietbi3").set({Den: "Dat bat"})
+     firebase.database().ref("Thietbi3").set({Den: "Da bat"})
 
 })
 btn6.addEventListener('click', ()=>{
     img3.src = 'lamp_off.png';
-    firebase.database().ref("Thietbi3").set({Den: "Dat tat"})
+    firebase.database().ref("Thietbi3").set({Den: "Da tat"})
 
 })
