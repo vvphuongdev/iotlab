@@ -40,6 +40,7 @@ body{
     grid-gap: 1.5rem;
     align-items: center;
     padding-bottom: 50px;
+    margin:50px;
     /* display: flex;
     justify-content:space-between;
     margin-left: auto;
@@ -69,6 +70,7 @@ body{
     grid-gap: 1.5rem;
     align-items: center;
     padding-bottom: 50px;
+    margin:50px;    
     /* position: relative;
     display: flex;
     flex-direction: row;
