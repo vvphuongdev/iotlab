@@ -47,3 +47,32 @@ btn6.addEventListener('click', ()=>{
     firebase.database().ref("Thietbi3").set({Den: "Da tat"})
 
 })
+
+let btn_farm1 = document.querySelector('#farm1');
+let btn_farm2 = document.querySelector('#farm2');
+let btn_farm3 = document.querySelector('#farm3');
+let btn_farm4 = document.querySelector('#farm4');
+let nhiet_do = document.querySelector("#nhietdo1");
+let do_am = document.querySelector("#doam1");
+let anh_sang = document.querySelector("#anhsang1");
+
+btn_farm1.addEventListener('click', ()=>{
+    nhiet_do.src = 'temp1-icon.png';
+    do_am.src = 'humidity-on.png';
+    anh_sang.src = 'light-on.png';
+})
+btn_farm2.addEventListener('click', ()=>{
+    nhiet_do.src = 'temp1-icon.png';
+    do_am.src = 'humidity-on.png';
+    anh_sang.src = 'light-on.png';
+})
+btn_farm3.addEventListener('click', ()=>{
+    nhiet_do.src = 'temp1-icon.png';
+    do_am.src = 'humidity-on.png';
+    anh_sang.src = 'light-on.png';
+})
+btn_farm4.addEventListener('click', ()=>{
+    nhiet_do.src = 'temp1-icon.png';
+    do_am.src = 'humidity-on.png';
+    anh_sang.src = 'light-on.png';
+})
