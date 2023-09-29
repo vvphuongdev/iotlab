@@ -60,19 +60,35 @@ btn_farm1.addEventListener('click', ()=>{
     nhiet_do.src = 'temp1-icon.png';
     do_am.src = 'humidity-on.png';
     anh_sang.src = 'light-on.png';
+    btn_farm1.style.backgroundColor = 'salmon';
+    btn_farm2.style.backgroundColor = 'white';
+    btn_farm3.style.backgroundColor = 'white';
+    btn_farm4.style.backgroundColor = 'white';
 })
 btn_farm2.addEventListener('click', ()=>{
     nhiet_do.src = 'temp1-icon.png';
     do_am.src = 'humidity-on.png';
     anh_sang.src = 'light-on.png';
+    btn_farm1.style.backgroundColor = 'white';
+    btn_farm2.style.backgroundColor = 'salmon';
+    btn_farm3.style.backgroundColor = 'white';
+    btn_farm4.style.backgroundColor = 'white';
 })
 btn_farm3.addEventListener('click', ()=>{
     nhiet_do.src = 'temp1-icon.png';
     do_am.src = 'humidity-on.png';
     anh_sang.src = 'light-on.png';
+    btn_farm1.style.backgroundColor = 'white';
+    btn_farm2.style.backgroundColor = 'white';
+    btn_farm3.style.backgroundColor = 'salmon';
+    btn_farm4.style.backgroundColor = 'white';
 })
 btn_farm4.addEventListener('click', ()=>{
     nhiet_do.src = 'temp1-icon.png';
     do_am.src = 'humidity-on.png';
     anh_sang.src = 'light-on.png';
+    btn_farm1.style.backgroundColor = 'white';
+    btn_farm2.style.backgroundColor = 'white';
+    btn_farm3.style.backgroundColor = 'white';
+    btn_farm4.style.backgroundColor = 'salmon';
 })
