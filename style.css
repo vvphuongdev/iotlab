@@ -9,9 +9,18 @@ body{
     
 }
 .header{
-    text-align: center;
     background-color: greenyellow;
-    height: 100px;
+}
+.header button{
+    margin: 10px;
+    font-size: 20px;
+    padding: 10px 24px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: white;
+}
+.header h1{
+    text-align: center;
 }
 .banner{
     list-style:none;

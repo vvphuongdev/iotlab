@@ -60,7 +60,7 @@ btn_farm1.addEventListener('click', ()=>{
     nhiet_do.src = 'temp1-icon.png';
     do_am.src = 'humidity-on.png';
     anh_sang.src = 'light-on.png';
-    btn_farm1.style.backgroundColor = 'salmon';
+    btn_farm1.style.backgroundColor = '#CCFF00';
     btn_farm2.style.backgroundColor = 'white';
     btn_farm3.style.backgroundColor = 'white';
     btn_farm4.style.backgroundColor = 'white';
@@ -70,7 +70,7 @@ btn_farm2.addEventListener('click', ()=>{
     do_am.src = 'humidity-on.png';
     anh_sang.src = 'light-on.png';
     btn_farm1.style.backgroundColor = 'white';
-    btn_farm2.style.backgroundColor = 'salmon';
+    btn_farm2.style.backgroundColor = '#CCFF00';
     btn_farm3.style.backgroundColor = 'white';
     btn_farm4.style.backgroundColor = 'white';
 })
@@ -80,7 +80,7 @@ btn_farm3.addEventListener('click', ()=>{
     anh_sang.src = 'light-on.png';
     btn_farm1.style.backgroundColor = 'white';
     btn_farm2.style.backgroundColor = 'white';
-    btn_farm3.style.backgroundColor = 'salmon';
+    btn_farm3.style.backgroundColor = '#CCFF00';
     btn_farm4.style.backgroundColor = 'white';
 })
 btn_farm4.addEventListener('click', ()=>{
@@ -90,5 +90,30 @@ btn_farm4.addEventListener('click', ()=>{
     btn_farm1.style.backgroundColor = 'white';
     btn_farm2.style.backgroundColor = 'white';
     btn_farm3.style.backgroundColor = 'white';
-    btn_farm4.style.backgroundColor = 'salmon';
+    btn_farm4.style.backgroundColor = '#CCFF00';
 })
+
+let btn_home = document.querySelector('#home');
+let nhiet_do_so = document.querySelector('#nhietdo');
+let do_am_so = document.querySelector('#doam');
+let anh_sang_so = document.querySelector('#anhsang');
+
+btn_home.addEventListener('click', ()=>{
+    img1.src = 'bomnuoc_off.png';
+    img2.src = 'baochay_off.png';
+    img3.src = 'lamp_off.png';
+    nhiet_do.src = 'temp-icon.png';
+    do_am.src = 'humidity-off.png';
+    anh_sang.src = 'light-off.png';
+    btn_farm1.style.backgroundColor = 'white';
+    btn_farm2.style.backgroundColor = 'white';
+    btn_farm3.style.backgroundColor = 'white';
+    btn_farm4.style.backgroundColor = 'white';
+    nhiet_do_so.innerHTML = '&nbsp';
+    do_am_so.innerHTML = '&nbsp;';
+    anh_sang_so.innerHTML = '&nbsp;';
+    firebase.database().ref("Thietbi1").set({Maybom: "Da bat"})
+    firebase.database().ref("Thietbi2").set({Baochay:"Da tat"})
+    firebase.database().ref("Thietbi3").set({Den: "Da tat"})
+})
+
