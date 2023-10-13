@@ -112,7 +112,7 @@ btn_home.addEventListener('click', ()=>{
     nhiet_do_so.innerHTML = '&nbsp';
     do_am_so.innerHTML = '&nbsp;';
     anh_sang_so.innerHTML = '&nbsp;';
-    firebase.database().ref("Thietbi1").set({Maybom: "Da bat"})
+    firebase.database().ref("Thietbi1").set({Maybom: "Da tat"})
     firebase.database().ref("Thietbi2").set({Baochay:"Da tat"})
     firebase.database().ref("Thietbi3").set({Den: "Da tat"})
 })
